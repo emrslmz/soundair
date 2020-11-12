@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Air</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- /BOOTSTRAP -->
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- /FONTAWESOME -->
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- /CSS -->
+</head>
+<body class="body">
+    <!--HEADER -->
+    <header>
+        <div class="header">
+            <div class="container text-blacker">
+                <div class="row pt-4">
+                    <div class="col-md-8">
+                        <h5><a href=""><b>ᔕ</b>ound AIR</a></h5>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-around ">
+                        <a href="">Playlists</a>
+                        <a href=""><i class="fas fa-palette"></i> Create and Listen</a>
+                        <a href=""><i class="fas fa-sign-out-alt"></i> Çıkış Yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /FINISH HEADER -->
+    <!-- 3 CATEGORY BOX -->
+    <div class="container play-field">
+        <div class="d-flex justify-content-center">
+            <h5>What is your mood?</h5>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="category d-flex justify-content-center align-items-center">
+                <a href="" title="Uyku">
+                    <i class="fas fa-bed"></i>
+                </a>
+            </div>
+            <div class="category d-flex justify-content-center align-items-center">
+                <a href="" title="Çalışma">
+                    <i class="fas fa-pencil-ruler"></i>
+                </a>
+            </div>
+            <div class="category d-flex justify-content-center align-items-center">
+                <a href="" title="Trafik">
+                    <i class="fab fa-mixcloud"></i>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-center">
+            <small>or</small>
+        </div>
+        <div class="d-flex justify-content-center">
+            <h5>Create your own</h5>
+        </div>
+    </div>
+    <!-- /FINISH 3 CATEGORY BOX -->
+    <!-- START SELECTION -->
+    <div class="container selectable">
+        <!--SOUND SETTING -->
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="rain1" src="../sound/rain1.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-cloud-rain" onclick="document.getElementById('rain1').play()"></a> 
+                <!--END SOUND-->
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                <audio id="snow1" src="../sound/snow1.mp3" type="audio/ogg" loop></audio>
+                <a type="button" class="fas fa-snowflake" onclick="document.getElementById('snow1').play()"></a> 
+            <!--END SOUND-->
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="wind1" src="../sound/wind1.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-wind" onclick="document.getElementById('wind1').play()"></a> 
+                <!--END SOUND-->
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="thunder4" src="../sound/thunder4.m4a" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-poo-storm" onclick="document.getElementById('thunder4').play()"></a> 
+                <!--END SOUND-->
+            </div>
+        </div>
+        <!-- /FINISH SOUND SETTING -->
+        <!--SOUND SETTING -->
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <a href="">
+                    <i class="fas fa-water"></i>
+                </a>
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="car_rain1" src="../sound/car_rain1.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-car" onclick="document.getElementById('car_rain1').play()"></a> 
+                <!--END SOUND-->
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="plane_take_of" src="../sound/plane_take_off.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-plane-departure" onclick="document.getElementById('plane_take_of').play()"></a> 
+                <!--END SOUND-->
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="plane_cabin" src="../sound/plane_cabin.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-plane" onclick="document.getElementById('plane_cabin').play()"></a> 
+                <!--END SOUND-->
+            </div>
+        </div>
+        <!-- /FINISH SOUND SETTING -->
+        <!--SOUND SETTING -->
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="christmas" src="../sound/christmas.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-snowman fa-spin " onclick="document.getElementById('christmas').play()"></a> 
+                <!--END SOUND-->
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                    <a href=""><i class="fas fa-sleigh"></i></a>
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <a href="">
+                    <i class="fas fa-mug-hot"></i>
+                </a>
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                 <!--START SOUND-->
+                    <audio id="fireplace" src="../sound/fireplace1.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-fire" onclick="document.getElementById('fireplace').play()"></a> 
+                <!--END SOUND-->
+            </div>
+        </div>
+        <!-- /FINISH SOUND SETTING -->
+        <!--SOUND SETTING -->
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="enginesound" src="../sound/enginesound.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-cog" onclick="document.getElementById('enginesound').play()"></a> 
+                <!--END SOUND-->
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                    <a href=""><i class="fas fa-sleigh"></i></a>
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="walkstreet" src="../sound/walkstreet.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-walking" onclick="document.getElementById('walkstreet').play()"></a> 
+                <!--END SOUND-->
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="walkstreet_snow" src="../sound/walkstreet_snow.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-walking" onclick="document.getElementById('walkstreet_snow').play()"></a>
+                <!--END SOUND-->
+            </div>
+        </div>
+        <!-- /FINISH SOUND SETTING -->
+        <!--SOUND SETTING -->
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="carsound" src="../sound/carsound.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-car-side" onclick="document.getElementById('carsound').play()"></a> 
+                <!--END SOUND-->
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="car_rain1" src="../sound/car_rain1.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-car" onclick="document.getElementById('car_rain1').play()"></a> 
+                <!--END SOUND-->
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="walkstreet" src="../sound/walkstreet.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-walking" onclick="document.getElementById('walkstreet').play()"></a> 
+                <!--END SOUND-->
+                <a href="">
+                    <i class=""></i>
+                </a>
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <a href="">
+                    <i class="fas fa-fire"></i>
+                </a>
+            </div>
+        </div>
+        <!-- /FINISH SOUND SETTING -->
+    </div>
+    <!-- /FINISH SELECTION -->
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="d-flex">
+                <div class="col-md-8 footer-left">
+                    <div class="container text-white">
+                        <h5 class="text-blacker"><a href=""><b>ᔕ</b>ound AIR</a></h5>
+                        <p>Proin auctor sapien metus, ut pretium urna pellentesque a. Proin convallis sagittis rhoncus. Sed blandit molestie arcu, non sagittis quam malesuada ac. Integer et nunc turpis. Aliquam quis convallis enim. Fusce velit nisl, feugiat et rhoncus eu, tempus vel augue. Donec lacinia lacus condimentum, finibus elit nec, pretium arcu. Nulla ac volutpat dolor. Maecenas ullamcorper ligula neque, at accumsan urna laoreet vitae. Morbi eu nulla hendrerit, pulvinar mi id, luctus nisi</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 footer-right text-white text-center">
+                    <h5 class="text-blacker">Follow us! </h5>
+                    <div class="d-flex justify-content-between mx-5 px-5">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>Follow us to hear from developments</p>
+                    <hr>
+                    <small>OR</small>
+                    <hr>
+                    <p>TEXT US!</p>
+                    <div class="text-us" align="center">
+                        <input placeholder="e-mail Address" class="form-control form-control-sm" type="text">
+                        <textarea placeholder="Your Message (request, complaint, suggestion)" class="form-control"rows="3"></textarea>
+                        <button class="btn btn-primary btn-sm">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /FINISH FOOTER -->
+    <!-- GRAY AREA -->
+    <div class="gray-area"></div>
+    <!-- /FINISH GRAY AREA -->
+</body>
+</html>

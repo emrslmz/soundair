@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Air</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- /BOOTSTRAP -->
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- /FONTAWESOME -->
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- /CSS -->
+</head>
+<body class="body">
+    <!--HEADER -->
+    <header>
+        <div class="header">
+            <div class="container text-blacker">
+                <div class="row pt-4">
+                    <div class="col-md-8">
+                        <h5><a href=""><b>ᔕ</b>ound AIR</a></h5>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-around ">
+                        <a href="">Playlists</a>
+                        <a href=""><i class="fas fa-palette"></i> Create and Listen</a>
+                        <a href=""><i class="fas fa-sign-out-alt"></i> Çıkış Yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /FINISH HEADER -->
+    <div class="container audio-setting">
+        <div>
+            <audio id="player" src="../sound/rain1.mp3" type="audio/ogg" loop></audio>
+            <div> 
+                <a href="#played" class="fas fa-palette" onclick="document.getElementById('player').play()"></a> 
+                <button onclick="document.getElementById('player').pause()">Pause</button> 
+                <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+                <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+            </div>
+        </div>
+     
+
+
+
+
+
+
+
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="col-md-3 selectable-box d-flex flex-column justify-content-center align-items-center">
+                <!--START SOUND-->
+                    <audio id="christmas" src="../sound/christmas.mp3" type="audio/ogg" loop></audio>
+                    <a  id="snowman" type="button" class="fas fa-snowman" onclick="document.getElementById('christmas').play(), volumesetting(), active()"></a> 
+                    <div id="myDIV"></div>
+                <!--END SOUND-->
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                    <a href=""><i class="fas fa-sleigh"></i></a>
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                <a href="">
+                    <i class="fas fa-mug-hot"></i>
+                </a>
+            </div>
+            <div class="col-md-3 selectable-box d-flex justify-content-center align-items-center">
+                 <!--START SOUND-->
+                    <audio id="fireplace" src="../sound/fireplace1.mp3" type="audio/ogg" loop></audio>
+                    <a type="button" class="fas fa-fire" onclick="document.getElementById('fireplace').play()"></a> 
+                <!--END SOUND-->
+            </div>
+        </div>
+        
+
+
+
+       
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="d-flex">
+                <div class="col-md-8 footer-left">
+                    <div class="container text-white">
+                        <h5 class="text-blacker"><a href=""><b>ᔕ</b>ound AIR</a></h5>
+                        <p>Proin auctor sapien metus, ut pretium urna pellentesque a. Proin convallis sagittis rhoncus. Sed blandit molestie arcu, non sagittis quam malesuada ac. Integer et nunc turpis. Aliquam quis convallis enim. Fusce velit nisl, feugiat et rhoncus eu, tempus vel augue. Donec lacinia lacus condimentum, finibus elit nec, pretium arcu. Nulla ac volutpat dolor. Maecenas ullamcorper ligula neque, at accumsan urna laoreet vitae. Morbi eu nulla hendrerit, pulvinar mi id, luctus nisi</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 footer-right text-white text-center">
+                    <h5 class="text-blacker">Follow us! </h5>
+                    <div class="d-flex justify-content-between mx-5 px-5">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>Follow us to hear from developments</p>
+                    <hr>
+                    <small>OR</small>
+                    <hr>
+                    <p>TEXT US!</p>
+                    <div class="text-us" align="center">
+                        <input placeholder="e-mail Address" class="form-control form-control-sm" type="text">
+                        <textarea placeholder="Your Message (request, complaint, suggestion)" class="form-control"rows="3"></textarea>
+                        <button class="btn btn-primary btn-sm">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /FINISH FOOTER -->
+    <!-- GRAY AREA -->
+    <div class="gray-area"></div>
+    <!-- /FINISH GRAY AREA -->
+</body>
+
+<script>
+function volumesetting() {
+    var volume = document.getElementById("myDIV");
+    if (volume.innerHTML === "") {
+        volume.innerHTML = `
+                <small type="button" class="fas fa-volume-up text-white volume-hover" onclick="document.getElementById('christmas').volume += 0.1"></small> 
+                <small type="button" class="fas fa-volume-down text-white volume-hover" onclick="document.getElementById('christmas').volume -= 0.1"></small>
+                <small id="pause" type="button" class="fas fa-pause-circle text-white volume-hover" onclick="document.getElementById('christmas').pause(), pause()"></small>
+                <small id="play" type="button" class="fas fa-play-circle text-white volume-hover" onclick="document.getElementById('christmas').play(), active()"></small>
+                 `;
+    } else {
+        volume.innerHTML = "";
+    }
+}
+
+function active() { 
+    document.getElementById("snowman").style.color = "white";
+    document.getElementById("snowman").style.opacity = 1;
+    document.getElementById("play").style.opacity= 1;
+    document.getElementById("pause").style.opacity= 0.5;
+} 
+
+function pause() { 
+    document.getElementById("snowman").style.color = "white";
+    document.getElementById("snowman").style.opacity = 0.5;
+    document.getElementById("play").style.opacity= 0.5;
+    document.getElementById("pause").style.opacity= 1;
+} 
+
+
+</script>
+
+</html>
